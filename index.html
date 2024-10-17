@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Todo List</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1 id="main" class="animate__animated animate__bounceInDown">✨ Todo List ✨</h1>
+        <div class="grid animate__animated animate__fadeInUp">
+            <input type="text" placeholder="✍️ Enter your task..." id="input">
+            <input type="date" id="tododate">
+            <button id="submit" onclick="addtodo();">
+                <span>Add Task</span>
+            </button>
+        </div>
+
+        <div class="list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
